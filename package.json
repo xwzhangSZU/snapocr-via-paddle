@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "snapocr-via-paddle",
   "title": "SnapOCR Via Paddle",
-  "description": "Snap a screenshot and recognize text via PaddleOCR API, optimized for Chinese handwritten and vertical layouts",
+  "description": "Snap a screenshot and recognize text via Baidu AIStudio PaddleOCR API, optimized for Chinese handwritten and vertical layouts",
   "icon": "command-icon.png",
   "author": "xianwei_zhang",
   "categories": [

@@ -4,9 +4,9 @@ Snap a screenshot and recognize text via [PaddleOCR](https://github.com/PaddlePa
 
 截图识别文字，基于 [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) API，针对中文手写体和竖排文字进行优化。
 
-Text recognition is powered by PaddleOCR-VL model via [AIStudio](https://aistudio.baidu.com/paddleocr) cloud API. No local dependencies required.
+Text recognition is powered by PaddleOCR-VL model via [Baidu AIStudio](https://aistudio.baidu.com/paddleocr) cloud API. No local dependencies required — just a free Baidu AIStudio account.
 
-文字识别由 PaddleOCR-VL 模型提供支持，通过 [AIStudio](https://aistudio.baidu.com/paddleocr) 云端 API 调用，无需安装本地依赖。
+文字识别由 PaddleOCR-VL 模型提供支持，通过[百度 AIStudio](https://aistudio.baidu.com/paddleocr) 云端 API 调用，无需安装本地依赖——只需一个免费的百度 AIStudio 账号。
 
 ## Commands | 命令
 
@@ -53,9 +53,9 @@ Unlike plain-text OCR, SnapOCR preserves document structure in the output:
 
 ## Setup | 配置
 
-You need a free AIStudio account to get the API credentials.
+You need a free [Baidu AIStudio](https://aistudio.baidu.com) account to get the API credentials. The API is provided by Baidu's AIStudio platform.
 
-你需要一个免费的 AIStudio 账号来获取 API 凭据。
+你需要一个免费的[百度 AIStudio](https://aistudio.baidu.com) 账号来获取 API 凭据。API 由百度 AIStudio 平台提供。
 
 ### 1. Get API URL and Access Token | 获取 API URL 和 Access Token
 
