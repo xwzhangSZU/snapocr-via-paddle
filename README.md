@@ -1,8 +1,8 @@
-# PaddleOCR
+# SnapOCR via Paddle
 
-Recognize text from screenshots using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) API, optimized for Chinese text including handwritten and vertical layouts.
+Snap a screenshot and recognize text via [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) API, optimized for Chinese text including handwritten and vertical layouts.
 
-使用 [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) API 从截图中识别文字，针对中文手写体和竖排文字进行优化。
+截图识别文字，基于 [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) API，针对中文手写体和竖排文字进行优化。
 
 Text recognition is powered by PaddleOCR-VL model via [AIStudio](https://aistudio.baidu.com/paddleocr) cloud API. No local dependencies required.
 
@@ -29,19 +29,19 @@ PaddleOCR-VL 不仅仅是简单的文字提取。在扩展偏好设置中启用�
 
 ### Markdown-Formatted Output | Markdown 格式化输出
 
-Unlike plain-text OCR, PaddleOCR preserves document structure in the output:
+Unlike plain-text OCR, SnapOCR preserves document structure in the output:
 
-与纯文本 OCR 不同，PaddleOCR 在输出中保留文档结构：
+与纯文本 OCR 不同，SnapOCR 在输出中保留文档结构：
 
 - Headings, lists, and paragraphs maintain their hierarchy / 标题、列表和段落保持层级关系
 - Tables are converted to Markdown table format / 表格转换为 Markdown 表格格式
 - Mathematical formulas are preserved / 数学公式得以保留
 - Copy as plain text or Markdown from the Preview OCR view / 在预览视图中可复制纯文本或 Markdown
 
-## Why PaddleOCR over Local OCR? | 为什么选择 PaddleOCR？
+## Why SnapOCR over Local OCR? | 为什么选择 SnapOCR？
 
-| Feature / 功能 | PaddleOCR (this extension) | macOS Vision (ScreenOCR) |
-|---------|---------------------------|--------------------------|
+| Feature / 功能 | SnapOCR via Paddle | macOS Vision (ScreenOCR) |
+|---------|------------------------------|--------------------------|
 | Chinese handwritten text / 中文手写体 | Excellent / 优秀 | Limited / 有限 |
 | Vertical Chinese text / 竖排中文 | Excellent / 优秀 | Limited / 有限 |
 | Document layout parsing / 文档版面解析 | Tables, formulas, charts / 表格、公式、图表 | Text only / 仅文本 |
