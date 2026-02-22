@@ -11,6 +11,37 @@ Text recognition is powered by PaddleOCR-VL model via [AIStudio](https://aistudi
 | **Quick OCR** | Take a screenshot and copy recognized text to clipboard |
 | **Preview OCR** | Take a screenshot and preview recognized text in a detail view |
 
+## Features
+
+### Advanced OCR Capabilities
+
+PaddleOCR-VL goes beyond simple text extraction. Enable optional features in extension preferences to handle complex documents:
+
+- **Document Orientation Classify** — Automatically detects and corrects documents rotated at 0°/90°/180°/270°. Perfect for photos of documents taken at odd angles.
+- **Document Unwarping** — Corrects perspective distortion from curved or tilted documents. Great for book pages, receipts, and whiteboard photos.
+- **Chart Recognition** — Extracts structured data from charts, tables, and diagrams, converting them into readable text and Markdown tables.
+
+### Markdown-Formatted Output
+
+Unlike plain-text OCR, PaddleOCR preserves document structure in the output:
+- Headings, lists, and paragraphs maintain their hierarchy
+- Tables are converted to Markdown table format
+- Mathematical formulas are preserved
+- Copy as plain text or Markdown from the Preview OCR view
+
+## Why PaddleOCR over Local OCR?
+
+| Feature | PaddleOCR (this extension) | macOS Vision (ScreenOCR) |
+|---------|---------------------------|--------------------------|
+| Chinese handwritten text | Excellent | Limited |
+| Vertical Chinese text | Excellent | Limited |
+| Document layout parsing | Tables, formulas, charts | Text only |
+| Output format | Structured Markdown | Plain text |
+| Orientation correction | Built-in | Manual |
+| Perspective unwarping | Built-in | Not available |
+| Privacy | Cloud API | Local processing |
+| Internet required | Yes | No |
+
 ## Setup
 
 You need a free AIStudio account to get the API credentials.
@@ -32,22 +63,3 @@ Open Raycast → search "Quick OCR" or "Preview OCR" → you'll be prompted to e
 |---------|-------|
 | **Access Token** | The `TOKEN` value from step 1 |
 | **API URL** | The base URL from `API_URL` (e.g. `https://xxx.aistudio-app.com`) |
-
-### Optional Settings
-
-| Setting | Description |
-|---------|-------------|
-| Document Orientation Classify | Auto-detect and correct document orientation |
-| Document Unwarping | Correct perspective distortion |
-| Chart Recognition | Recognize text from charts and tables |
-
-## Why PaddleOCR?
-
-Compared to macOS built-in Vision OCR (used by ScreenOCR), PaddleOCR provides:
-
-- Better accuracy for **Chinese handwritten text**
-- Better support for **vertical Chinese text** layouts
-- Superior **document layout parsing** (tables, formulas, charts)
-- **Markdown-formatted** output preserving document structure
-
-The trade-off is that it requires an internet connection and API credentials.
