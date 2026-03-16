@@ -8,9 +8,9 @@
 /* eslint-disable @typescript-eslint/ban-types */
 
 type ExtensionPreferences = {
-  /** Access Token - AIStudio Access Token. Get it from https://aistudio.baidu.com/paddleocr → click API → copy TOKEN value */
+  /** Access Token - Baidu AIStudio Access Token. Get it from https://aistudio.baidu.com/paddleocr → click API → copy TOKEN value */
   "accessToken": string,
-  /** API URL - PaddleOCR API URL (without path). Get it from https://aistudio.baidu.com/paddleocr → click API → copy the base URL from API_URL */
+  /** API URL - Baidu AIStudio PaddleOCR API URL (without path). Get it from https://aistudio.baidu.com/paddleocr → click API → copy the base URL from API_URL */
   "apiUrl": string,
   /** Document Orientation Classify - Automatically detect and correct document orientation */
   "useDocOrientationClassify": boolean,
