@@ -12,6 +12,8 @@ type ExtensionPreferences = {
   "accessToken": string,
   /** API URL - Baidu AIStudio PaddleOCR API URL (without path). Get it from https://aistudio.baidu.com/paddleocr → click API → copy the base URL from API_URL */
   "apiUrl": string,
+  /** Fast Mode - Resize large images before upload and skip slower enhancement passes. This is enabled by default for quicker results. */
+  "fastMode": boolean,
   /** Document Orientation Classify - Automatically detect and correct document orientation */
   "useDocOrientationClassify": boolean,
   /** Document Unwarping - Correct perspective distortion in document images */
@@ -28,6 +30,8 @@ declare namespace Preferences {
   export type QuickOcr = ExtensionPreferences & {}
   /** Preferences accessible in the `preview-ocr` command */
   export type PreviewOcr = ExtensionPreferences & {}
+  /** Preferences accessible in the `export-ocr` command */
+  export type ExportOcr = ExtensionPreferences & {}
 }
 
 declare namespace Arguments {
@@ -35,5 +39,7 @@ declare namespace Arguments {
   export type QuickOcr = {}
   /** Arguments passed to the `preview-ocr` command */
   export type PreviewOcr = {}
+  /** Arguments passed to the `export-ocr` command */
+  export type ExportOcr = {}
 }
 
